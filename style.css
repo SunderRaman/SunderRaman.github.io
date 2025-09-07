@@ -57,14 +57,20 @@ nav a:hover {
   }
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 .hero p {
-  margin: 1rem 0;
+  margin: 0.5rem 0;   /* tighter spacing */
+  line-height: 1.4;
 }
 .hero .about {
-  margin-top: -2rem;
+  margin-top: -1rem;  /* pulls About Me slightly up */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
