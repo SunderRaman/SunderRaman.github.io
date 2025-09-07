@@ -125,16 +125,21 @@
       });
     });
 
+	document.getElementById("backToTopBtn").addEventListener("click", function(){
+	  window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
+
+
     // Back to Top button visibility
     window.onscroll = function() {
       let btn = document.getElementById("backToTopBtn");
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		btn.style.display = "flex";
+		btn.style.display = "block";
 	  } else {
 		btn.style.display = "none";
 	  }
     };
-
+	
     // Scroll to top
     function scrollToTop() {
       window.scrollTo({

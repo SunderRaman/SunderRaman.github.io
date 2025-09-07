@@ -119,8 +119,8 @@ nav a:hover {
   border-radius: 8px;
 }
 .projects h2 {
-  margin-top: 1rem;  /* reduce default spacing */
-  margin-bottom: 1rem; /* optional, keep headings tight */
+  margin-top: 0.5rem;  /* reduce default spacing */
+  margin-bottom: 0.5rem; /* optional, keep headings tight */
 }
 .tags {
   display: inline-block;
