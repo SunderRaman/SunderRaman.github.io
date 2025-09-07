@@ -41,8 +41,21 @@ nav a:hover {
   background: #1b263b;
   color: white;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;   /* default compact look */
 }
+
+/* Responsive tweak: add more padding on smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;   /* slightly taller for tablets/phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 2rem;   /* extra breathing space for small phones */
+  }
+
 .hero h1 {
   font-size: 2.5rem;
 }
@@ -137,24 +150,33 @@ footer {
 /* Back to Top button styling */
 #backToTopBtn {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  font-size: 22px;
+  bottom: 30px;
+  right: 30px;
+  background: #1e1e2f;  /* Matches dark header */
+  color: #fff;
   border: none;
-  outline: none;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: opacity 0.4s, transform 0.3s;
-  opacity: 0; /* hidden by default */
-  transform: scale(0.9);
+  width: 50px;
+  height: 50px;
+  display: flex;              /* Center the SVG */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  display: none; /* hidden by default */
+  z-index: 1000;
 }
 
 #backToTopBtn:hover {
   background-color: #45a049;
-  transform: scale(1);
+  transform: scale(1.1);
+}
+
+#backToTopBtn svg {
+  transition: transform 0.4s ease-in-out;
+}
+
+#backToTopBtn:hover svg {
+  transform: rotate(180deg);
 }
