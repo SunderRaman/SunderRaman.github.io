@@ -89,6 +89,7 @@ nav a:hover {
 .about, .skills, .projects, .contact {
   padding: 1.5rem 1rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 .about p {
   max-width: 700px;
@@ -116,6 +117,10 @@ nav a:hover {
 .project-card img {
   width: 100%;
   border-radius: 8px;
+}
+.projects h2 {
+  margin-top: 1rem;  /* reduce default spacing */
+  margin-bottom: 1rem; /* optional, keep headings tight */
 }
 .tags {
   display: inline-block;

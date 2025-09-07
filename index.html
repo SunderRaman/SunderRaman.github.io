@@ -128,11 +128,11 @@
     // Back to Top button visibility
     window.onscroll = function() {
       let btn = document.getElementById("backToTopBtn");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        btn.style.opacity = "1";
-      } else {
-        btn.style.opacity = "0";
-      }
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		btn.style.display = "flex";
+	  } else {
+		btn.style.display = "none";
+	  }
     };
 
     // Scroll to top
