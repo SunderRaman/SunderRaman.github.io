@@ -62,6 +62,9 @@ nav a:hover {
 .hero p {
   margin: 1rem 0;
 }
+.hero .about {
+  margin-top: -2rem;
+}
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -78,12 +81,12 @@ nav a:hover {
 
 /* About */
 .about, .skills, .projects, .contact {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 .about p {
   max-width: 700px;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   line-height: 1.5;
 }
 
