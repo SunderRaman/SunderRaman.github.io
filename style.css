@@ -41,7 +41,7 @@ nav a:hover {
   background: #1b263b;
   color: white;
   text-align: center;
-  padding: 3rem 2rem;   /* default compact look */
+  padding: 3rem 1.5rem;   /* default compact look */
 }
 
 /* Responsive tweak: add more padding on smaller screens */
